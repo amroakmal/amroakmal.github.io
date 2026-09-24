@@ -6,8 +6,8 @@
 
 ---
 
-I chase one question: how do large-scale systems *actually* behave when you push them
-to the edge? My research runs from **GPU architecture, partitioning, and power** and
+I'm interested to understand in depth how do large-scale systems *actually* behave when you push them
+to the edge? My research runs from **GPU architecture and partitioning** and
 **cross-vendor GPU hardware-counter mapping** on the AMD MI300A APU behind **LLNL's El
 Capitan exascale supercomputer**, to **fault tolerance in HPC**, **KV-caching architecture
 and performance**, and reshaping **MPI for the AI era** so it stays fault-tolerant and
