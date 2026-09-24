@@ -3,16 +3,29 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Amr Akmal Abouelmagd — HPC & GPU Systems Researcher</title>
-<meta name="description" content="Amr Akmal Abouelmagd — HPC & GPU systems researcher and PhD student at Tennessee Tech (advised by Prof. Anthony Skjellum). GPU architecture, partitioning &amp; power and cross-vendor hardware-counter mapping on the AMD MI300A behind LLNL&#39;s El Capitan; fault tolerance in HPC, KV-caching performance, and MPI for AI. Former LLNL research intern." />
+<title>Amr Akmal Abouelmagd — PhD Student, HPC &amp; AI Systems</title>
+<meta name="description" content="PhD student at Tennessee Tech (HPC &amp; AI systems: fault tolerance, KV caching, MPI for AI), previously at LLNL. Open to Summer 2027 internships." />
 <meta name="author" content="Amr Akmal Abouelmagd" />
+<link rel="canonical" href="https://amroakmal.github.io/" />
+<meta name="theme-color" content="#f3f5f8" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0c141d" media="(prefers-color-scheme: dark)" />
 
-<!-- Open Graph / social preview -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Amr Akmal Abouelmagd — HPC & GPU Systems Researcher" />
-<meta property="og:description" content="HPC & GPU systems researcher and PhD student at Tennessee Tech (advised by Prof. Anthony Skjellum) — GPU architecture & power, cross-vendor GPU hardware counters, fault tolerance in HPC, KV-caching, and MPI for AI. Former LLNL research intern." />
+<!-- Open Graph / social preview (LinkedIn, Slack, email) -->
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Amr Akmal Abouelmagd" />
+<meta property="og:title" content="Amr Akmal Abouelmagd — PhD Student, HPC &amp; AI Systems" />
+<meta property="og:description" content="PhD student at Tennessee Tech (advised by Prof. Anthony Skjellum) working on HPC &amp; AI systems: fault tolerance, KV caching, and MPI for AI. Previously GPU performance research at LLNL; 9 publications. Open to Summer 2027 internships." />
 <meta property="og:url" content="https://amroakmal.github.io/" />
-<meta name="twitter:card" content="summary" />
+<meta property="og:image" content="https://amroakmal.github.io/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Amr Akmal Abouelmagd — PhD Student, HPC and AI Systems" />
+<meta property="profile:first_name" content="Amr" />
+<meta property="profile:last_name" content="Abouelmagd" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Amr Akmal Abouelmagd — PhD Student, HPC &amp; AI Systems" />
+<meta name="twitter:description" content="PhD student at Tennessee Tech (HPC &amp; AI systems: fault tolerance, KV caching, MPI for AI), previously at LLNL. Open to Summer 2027 internships." />
+<meta name="twitter:image" content="https://amroakmal.github.io/og-image.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -131,7 +144,6 @@
   }
   .icon-btn:hover { color: var(--ink); border-color: var(--line-strong); transform: translateY(-1px); }
   .icon-btn svg { width: 17px; height: 17px; }
-  .menu-toggle { display: none; }
 
   /* ---------- Hero ---------- */
   .hero { padding: 74px 0 30px; position: relative; }
@@ -203,7 +215,6 @@
   .pub-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 11px; }
   .pub-link { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; font-weight: 500; padding: 4px 10px; border-radius: 7px; border: 1px solid var(--line-strong); color: var(--ink-soft); display: inline-flex; align-items: center; gap: 5px; transition: color .18s, border-color .18s; }
   .pub-link:hover { color: var(--accent); border-color: var(--accent); }
-  .pub-todo { color: var(--ink-faint); font-style: italic; }
   .badge svg { width: 12px; height: 12px; }
 
   /* Experience timeline */
@@ -230,12 +241,6 @@
   .proj:hover { border-color: var(--line-strong); box-shadow: var(--shadow); }
   .proj-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
   .proj h3 { font-size: 17px; letter-spacing: -0.015em; line-height: 1.25; }
-  a.proj { cursor: pointer; }
-  a.proj:hover { transform: translateY(-3px); box-shadow: var(--shadow-lift); }
-  .proj .arrow { color: var(--ink-faint); flex: none; transition: color .2s, transform .2s; }
-  a.proj:hover .arrow { color: var(--accent); transform: translate(2px,-2px); }
-  .proj .arrow svg { width: 17px; height: 17px; display: block; }
-  .proj-note { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-faint); margin-top: 12px; }
   .proj p { margin: 0 0 14px; font-size: 14px; color: var(--ink-soft); line-height: 1.55; flex: 1; }
   .proj .stack { margin-top: auto; }
 
@@ -274,11 +279,6 @@
 
   /* Responsive */
   @media (max-width: 860px) {
-    .navlinks { display: none; }
-    .menu-toggle { display: grid; }
-    .metrics { grid-template-columns: repeat(2, 1fr); }
-    .metric:nth-child(2) { border-right: none; }
-    .metric:nth-child(1), .metric:nth-child(2) { border-bottom: 1px solid var(--line); }
     .interests, .skills { grid-template-columns: 1fr; }
     .projects { grid-template-columns: 1fr; }
     .job { grid-template-columns: 1fr; gap: 14px; }
@@ -290,30 +290,154 @@
   @media (max-width: 480px) {
     body { font-size: 16px; }
     .wrap { padding: 0 20px; }
-    .metrics { grid-template-columns: 1fr; }
-    .metric { border-right: none !important; border-bottom: 1px solid var(--line); }
-    .metric:last-child { border-bottom: none; }
+  }
+
+  /* ---------- Contact, accessibility, mobile nav, print ---------- */
+  .skip {
+    position: absolute; left: 12px; top: -64px; z-index: 100;
+    padding: 9px 14px; border-radius: 8px;
+    background: var(--ink); color: var(--bg);
+    font-family: "IBM Plex Mono", monospace; font-size: 13px; font-weight: 600;
+    transition: top .15s ease;
+  }
+  .skip:focus { top: 12px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .contact-btn {
+    font-family: "IBM Plex Mono", monospace; font-size: 12.5px; font-weight: 600;
+    padding: 9px 15px; border-radius: 9px;
+    background: var(--ink); color: var(--bg);
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  html[data-theme="dark"] .contact-btn { background: var(--accent); color: #08111c; }
+  .contact-btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
+  .nav-contact { display: none; }
+  .role .seg { white-space: nowrap; }
+  .avail {
+    display: flex; width: fit-content; max-width: 100%; align-items: center; gap: 10px;
+    margin: -6px 0 26px; padding: 8px 16px 8px 13px; border-radius: 999px;
+    font-size: 14.5px; line-height: 1.45; color: var(--ink-soft);
+    background: color-mix(in srgb, #23c07a 9%, var(--surface));
+    border: 1px solid color-mix(in srgb, #23c07a 40%, transparent);
+  }
+  .avail b { color: var(--ink); font-weight: 600; }
+  .avail .status-dot { flex: none; }
+  .contact-lede b { color: var(--ink); font-weight: 600; }
+
+  .contact {
+    border: 1px solid var(--line); border-radius: var(--r);
+    background: var(--surface); box-shadow: var(--shadow);
+    padding: 30px 28px;
+  }
+  .contact-lede { margin: 0 0 18px; max-width: 640px; font-size: 16.5px; color: var(--ink-soft); }
+  .contact-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+  .contact-email {
+    font-family: "IBM Plex Mono", monospace; font-weight: 600;
+    font-size: clamp(17px, 2.6vw, 22px); color: var(--ink);
+    border-bottom: 2px solid var(--accent); padding-bottom: 2px;
+    overflow-wrap: anywhere; transition: color .18s ease;
+  }
+  .contact-email:hover { color: var(--accent); }
+  .copy-btn {
+    font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 600;
+    padding: 7px 12px; border-radius: 8px; cursor: pointer;
+    border: 1px solid var(--line-strong); background: var(--surface-2); color: var(--ink-soft);
+    transition: color .18s ease, border-color .18s ease;
+  }
+  .copy-btn:hover { color: var(--accent); border-color: var(--accent); }
+  .pub-links:empty { display: none; }
+
+  /* Tablet & phone: section links move to a swipeable row under the name */
+  @media (max-width: 980px) {
+    html { scroll-padding-top: 118px; }
+    .nav { flex-wrap: wrap; height: auto; padding-top: 12px; row-gap: 2px; }
+    .navlinks {
+      display: flex; order: 3; width: calc(100% + 20px); margin: 0 -10px;
+      overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+      padding-bottom: 8px;
+    }
+    .navlinks::-webkit-scrollbar { display: none; }
+    .navlinks a { flex: none; padding: 7px 10px; }
+  }
+  @media (max-width: 560px) {
+    .contact-btn { display: none; }
+    .nav-contact { display: inline-block; }
+    .contact { padding: 24px 20px; }
+    .eyebrow-sep { display: none; }
+    .avail { border-radius: 14px; font-size: 14px; }
+  }
+
+  /* Print / Save as PDF: clean, light, résumé-like */
+  @media print {
+    :root, html[data-theme="dark"] {
+      --bg: #fff; --bg-tint: #f3f4f6; --surface: #fff; --surface-2: #fff;
+      --ink: #111; --ink-soft: #333; --ink-faint: #666;
+      --line: #dcdcdc; --line-strong: #bdbdbd;
+      --accent: #1f3fa8; --accent-deep: #1f3fa8; --accent-wash: #eef2fd;
+      --amber: #8a5a10; --amber-wash: #fbf3e4;
+      --shadow: none; --shadow-lift: none;
+    }
+    header, .skip, .copy-btn, .foot-links, .status-dot { display: none !important; }
+    .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+    body { font-size: 11pt; }
+    .hero { padding: 0 0 10px; }
+    section { padding: 18px 0; }
+    .job, .pub, .award-row, .news-row, .proj, .skillgroup, .interest { break-inside: avoid; }
   }
 </style>
+<script>
+  /* Set the theme before first paint so dark-mode visitors never see a light flash */
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (!t) t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Amr Akmal Abouelmagd",
+  "url": "https://amroakmal.github.io/",
+  "email": "mailto:aabouelma42@tntech.edu",
+  "jobTitle": "PhD Student and Graduate Research Assistant",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "Tennessee Technological University" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Tennessee Technological University" },
+    { "@type": "CollegeOrUniversity", "name": "Alexandria University" }
+  ],
+  "knowsAbout": ["High-performance computing", "Fault tolerance", "KV caching", "MPI", "Collective communication", "GPU performance analysis", "Distributed systems"],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=FJQIUp4AAAAJ",
+    "https://www.linkedin.com/in/amroakmal/",
+    "https://github.com/amroakmal"
+  ]
+}
+</script>
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
 <header id="hdr">
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="Amr Akmal Abouelmagd — home">
+    <a class="brand" href="#top" aria-label="Amr Akmal Abouelmagd, back to top">
       <span class="mark">AA</span>
-      <span class="who">Amr Akmal Abouelmagd<span> / HPC systems</span></span>
+      <span class="who">Amr Akmal Abouelmagd</span>
     </a>
     <nav class="navlinks" aria-label="Section navigation">
       <a href="#news">News</a>
       <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
       <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a class="nav-contact" href="#contact">Contact</a>
     </nav>
     <div class="nav-tools">
-      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle theme">
+      <a class="contact-btn" href="#contact">Contact</a>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle dark mode" title="Toggle theme">
         <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
       </button>
@@ -322,38 +446,36 @@
 </header>
 
 <a id="top"></a>
-<main class="wrap">
+<main class="wrap" id="main">
 
   <!-- HERO -->
   <section class="hero no-rule" id="hero">
     <div class="hero-eyebrow reveal">
-      <span class="eyebrow"><span class="status-dot"></span>&nbsp;&nbsp;PHD STUDENT · TENNESSEE TECH</span>
-      <span class="eyebrow">·</span>
+      <span class="eyebrow">PHD STUDENT · TENNESSEE TECH</span>
+      <span class="eyebrow eyebrow-sep">·</span>
       <span class="eyebrow">BAY AREA, CA</span>
     </div>
     <h1 class="name reveal">Amr Akmal Abouelmagd</h1>
     <div class="role reveal">
-      PhD Student, Computer Science <span class="sep">/</span> HPC &amp; GPU Systems Researcher <span class="sep">/</span> Software Engineer
+      <span class="seg">PhD Student, Computer Science</span> <span class="sep">/</span> <span class="seg">HPC &amp; AI Systems Researcher</span> <span class="sep">/</span> <span class="seg">Software Engineer</span>
     </div>
     <p class="lede reveal">
-      I chase one question: how do large-scale systems <em>actually</em> behave when you push
-      them to the edge? My research runs from <strong>GPU architecture, partitioning, and
-      power</strong> and <strong>cross-vendor GPU hardware-counter mapping</strong> on the AMD
-      MI300A APU behind <strong>LLNL's El Capitan exascale supercomputer</strong>, to
-      <strong>fault tolerance in HPC</strong>, <strong>KV-caching architecture and
-      performance</strong>, and reshaping <strong>MPI for the AI era</strong> so it stays
-      fault-tolerant and keeps making strong progress under failure. I'm a <strong>PhD student
-      and Graduate Research Assistant at Tennessee Tech</strong>, advised by Prof. Anthony
-      Skjellum, following a research internship at <strong>Lawrence Livermore National
-      Laboratory</strong>.
+      I work on the systems software behind large-scale HPC and AI: <strong>fault tolerance</strong>,
+      <strong>KV-cache architecture and performance</strong>, and <strong>MPI and collective
+      communication for AI</strong> that keep making progress, even under failures. I'm a PhD
+      student at Tennessee Tech, advised by Prof. Anthony Skjellum. Previously, I researched
+      <strong>GPU performance</strong> on the AMD MI300A (El Capitan's APU) and NVIDIA H100 at
+      <strong>Lawrence Livermore National Laboratory</strong>, and spent 2.5 years building
+      production distributed systems at <strong>Incorta</strong>.
     </p>
+    <!-- AVAILABILITY: update or remove when your internship search ends (also in the Contact card and the <head> descriptions) -->
+    <div class="avail reveal"><span class="status-dot"></span><span>Open to <b>Summer 2027 internships</b> in HPC &amp; AI systems</span></div>
     <div class="links reveal">
-      <a class="link-pill" href="mailto:aabouelma42@tntech.edu">
+      <a class="link-pill" href="mailto:aabouelma42@tntech.edu" title="aabouelma42@tntech.edu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
         Email
       </a>
-      <!-- ↓↓ Replace this href with your real Google Scholar profile URL ↓↓ -->
-      <a class="link-pill" href="https://scholar.google.com/citations?user=FJQIUp4AAAAJ&hl=en" target="_blank" rel="noopener">
+      <a class="link-pill" href="https://scholar.google.com/citations?user=FJQIUp4AAAAJ&amp;hl=en" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8.5 12 14l10-5.5L12 3Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></svg>
         Google Scholar
       </a>
@@ -361,14 +483,9 @@
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
         GitHub
       </a>
-      <a class="link-pill" href="https://linkedin.com/in/amroakmal" target="_blank" rel="noopener">
+      <a class="link-pill" href="https://www.linkedin.com/in/amroakmal/" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5A1.94 1.94 0 1 1 3.06 5a1.94 1.94 0 0 1 3.88 0ZM3.4 8.5h3.06V21H3.4V8.5Zm5.1 0h2.93v1.71h.04c.41-.77 1.4-1.58 2.89-1.58 3.09 0 3.66 2.03 3.66 4.68V21h-3.06v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21H8.5V8.5Z"/></svg>
         LinkedIn
-      </a>
-      <!-- Upload your CV to the repo root as resume.pdf for this to work -->
-      <a class="link-pill" href="./resume.pdf" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2Z"/></svg>
-        Résumé (PDF)
       </a>
     </div>
   </section>
@@ -383,15 +500,15 @@
     <div class="news reveal">
       <div class="news-row">
         <div class="news-date">Sep 2026</div>
-        <div class="news-text">First-author paper accepted at the <b>ProTools workshop, SC'26</b> <span class="hl">(to appear)</span>.</div>
+        <div class="news-text">First-author paper <b>“Deriving Vendor-Agnostic GPU Metrics from AMD MI300A and NVIDIA H100 Hardware Counters”</b> accepted at the <b>ProTools workshop at SC'26</b>.</div>
       </div>
       <div class="news-row">
         <div class="news-date">Sep 2026</div>
-        <div class="news-text"><b>OpenCCL</b> poster accepted at <b>SC'26</b> <span class="hl">(to appear)</span>.</div>
+        <div class="news-text"><b>OpenCCL</b> poster, proposing an open standard that unifies collective communication libraries (*CCLs), accepted at <b>SC'26</b>.</div>
       </div>
       <div class="news-row">
         <div class="news-date">Aug 2026</div>
-        <div class="news-text">Completed my <b>M.S.</b> at Tennessee Tech and finished my research internship at <b>LLNL</b>; began my <b>PhD</b> and <b>Graduate Research Assistant</b> position with Prof. Anthony Skjellum.</div>
+        <div class="news-text">Completed my <b>M.S.</b> at Tennessee Tech (4.0 GPA) and my research internship at <b>LLNL</b>; started my <b>PhD</b> as a Graduate Research Assistant with Prof. Anthony Skjellum.</div>
       </div>
       <div class="news-row">
         <div class="news-date">Dec 2025</div>
@@ -416,49 +533,126 @@
       <span class="sub">// focus areas</span>
     </div>
     <div class="interests reveal">
-      <div class="interest"><span class="n">01</span><span class="t">GPU Architecture, Partitioning &amp; Power</span></div>
-      <div class="interest"><span class="n">02</span><span class="t">Cross-Vendor GPU Performance Analysis &amp; Hardware Counters</span></div>
-      <div class="interest"><span class="n">03</span><span class="t">Fault Tolerance in HPC Systems</span></div>
-      <div class="interest"><span class="n">04</span><span class="t">KV-Caching Architecture &amp; Performance</span></div>
-      <div class="interest"><span class="n">05</span><span class="t">MPI for AI — Fault-Tolerant, Strong Progress</span></div>
-      <div class="interest"><span class="n">06</span><span class="t">Distributed Systems &amp; Parallel Computing</span></div>
-      <div class="interest"><span class="n">07</span><span class="t">Systems Performance Analysis</span></div>
+      <div class="interest"><span class="n">01</span><span class="t">Fault Tolerance in HPC Systems</span></div>
+      <div class="interest"><span class="n">02</span><span class="t">KV-Cache Architecture &amp; Performance</span></div>
+      <div class="interest"><span class="n">03</span><span class="t">MPI &amp; Collective Communication for AI — Fault-Tolerant, Strong Progress</span></div>
+      <div class="interest"><span class="n">04</span><span class="t">Distributed Systems &amp; Parallel Computing</span></div>
+      <div class="interest"><span class="n">05</span><span class="t">Systems Performance Analysis</span></div>
+      <div class="interest"><span class="n">06</span><span class="t">GPU Performance — Partitioning, Power &amp; Cross-Vendor Hardware Counters</span></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="sec-head reveal">
+      <span class="idx">§ 03</span>
+      <h2>Experience</h2>
+      <span class="sub">// research + industry</span>
+    </div>
+    <div class="timeline">
+
+      <div class="job reveal">
+        <div class="job-side">
+          <div class="org">Tennessee Technological University</div>
+          <div class="place">Cookeville, TN</div>
+          <div class="dates">Aug 2026 — Present</div>
+        </div>
+        <div>
+          <div class="job-role">Graduate Research Assistant · Advisor: Prof. Anthony Skjellum</div>
+          <ul>
+            <li>Research on <b>fault tolerance</b> in HPC systems, <b>KV-cache architecture and performance</b>, and <b>MPI for AI</b>: communication that survives failures and makes strong progress.</li>
+            <li>Contributing to <b>OpenCCL</b>, a proposed open standard and reference implementation that unifies collective communication libraries (*CCLs) for performance, portability, and productivity; co-author of the SC'26 poster.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-side">
+          <div class="org">Lawrence Livermore National Lab</div>
+          <div class="place">Computation Directorate · Livermore, CA</div>
+          <div class="dates">Jan 2026 — Aug 2026</div>
+        </div>
+        <div>
+          <div class="job-role">Graduate Research Intern</div>
+          <ul>
+            <li>Derived <b>vendor-agnostic GPU performance metrics</b> from AMD MI300A and NVIDIA H100 hardware counters, enabling like-for-like comparison across vendors; <b>first-author paper</b> accepted at the ProTools workshop at SC'26.</li>
+            <li>Collected and analyzed hardware counters using Caliper, Thicket, rocprofiler-sdk, and Nsight Compute, with Benchpark and Spack for reproducible experiments.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-side">
+          <div class="org">Lawrence Livermore National Lab</div>
+          <div class="place">Computation Directorate · Livermore, CA</div>
+          <div class="dates">May 2025 — Aug 2025</div>
+        </div>
+        <div>
+          <div class="job-role">Graduate Research Intern</div>
+          <ul>
+            <li>Designed and ran benchmarking experiments on the <b>AMD MI300A APU</b> across SPX, TPX, and CPX partitioning modes using RAJA Performance Suite kernels, surfacing up to <b>30% execution-time variance</b> between configurations.</li>
+            <li>Conducted systems-level analysis of GPU runtime scheduling, dynamic power sharing, and heterogeneous memory behavior.</li>
+            <li><b>First-author paper</b> accepted at SCA/HPC Asia 2026, targeting optimization of LLNL's El Capitan exascale supercomputer; <b>Top 5 Finalist</b> in the SC'25 Graduate Student Research Competition.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-side">
+          <div class="org">Incorta</div>
+          <div class="place">Alexandria, Egypt</div>
+          <div class="dates">Aug 2021 — Feb 2024</div>
+        </div>
+        <div>
+          <div class="job-role">Software Engineer II · R&amp;D Software Engineer · Graduate Student Intern</div>
+          <ul>
+            <li>Delivered a <b>2× indexing speedup</b> and <b>7× query-latency reduction</b> on datasets exceeding 1 billion records in a distributed analytics platform built on Kubernetes and ZooKeeper, improving SLA compliance.</li>
+            <li>Raised average CPU utilization from <b>40% to 85%</b> by resolving execution bottlenecks, reducing cluster over-provisioning.</li>
+            <li>Designed an internal <b>caching layer</b> that cut cloud object-storage I/O and infrastructure cost with no hardware changes.</li>
+            <li>Improved monitoring and telemetry, reducing incident MTTR across microservices.</li>
+          </ul>
+          <div class="stack">
+            <span class="chip">Java</span><span class="chip">Python</span><span class="chip">Go</span><span class="chip">Kubernetes</span><span class="chip">ZooKeeper</span><span class="chip">MySQL</span><span class="chip">Distributed Systems</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- PUBLICATIONS -->
   <section id="publications">
     <div class="sec-head reveal">
-      <span class="idx">§ 03</span>
+      <span class="idx">§ 04</span>
       <h2>Publications</h2>
-      <span class="sub">// 9 papers · 5 first-author</span>
+      <span class="sub">// 9 publications · 5 first-author</span>
     </div>
     <div class="pubs">
 
       <div class="pub reveal">
         <div class="pub-num">01</div>
         <div>
-          <div class="pub-title">[ProTools @ SC&#39;26 — add exact paper title]</div>
-          <div class="pub-authors"><span class="me">A. A. Abouelmagd</span>, et al. &nbsp;<span class="pub-todo">— confirm full author list</span></div>
+          <div class="pub-title">Deriving Vendor-Agnostic GPU Metrics from AMD MI300A and NVIDIA H100 Hardware Counters</div>
+          <div class="pub-authors"><span class="me">A. A. Abouelmagd</span>, M. McKinsey, D. Boehme, S. Brink, O. Pearce</div>
           <div class="pub-meta">
-            <span class="venue">ProTools · SC&#39;26</span>
+            <span class="venue">ProTools Workshop · SC'26</span>
             <span class="badge first">First author</span>
             <span class="badge soon">To appear</span>
           </div>
-          <div class="pub-links"><!-- once published, add: <a class="pub-link" href="DOI_OR_PDF_URL" target="_blank" rel="noopener">DOI &#8599;</a>  (check ProTools/publisher author-posting policy before uploading a PDF) --></div>
+          <div class="pub-links"><!-- once published: <a class="pub-link" href="DOI_URL" target="_blank" rel="noopener">DOI &#8599;</a> (check the publisher's author-posting policy before linking a PDF) --></div>
         </div>
       </div>
 
       <div class="pub reveal">
         <div class="pub-num">02</div>
         <div>
-          <div class="pub-title">OpenCCL — [add exact poster title]</div>
-          <div class="pub-authors"><span class="pub-todo">add author list (incl. </span><span class="me">A. A. Abouelmagd</span><span class="pub-todo">)</span></div>
+          <div class="pub-title">OpenCCL: A Proposed Open Standard and Reference Implementation Unifying *CCLs for Performance, Portability, and Productivity</div>
+          <div class="pub-authors">A. Skjellum, P. Bangalore, T. Hines, K. Humphrey, J. Martin, <span class="me">A. A. Abouelmagd</span>, R. Shipley, R. Bisht, Z. Nine</div>
           <div class="pub-meta">
-            <span class="venue">Poster · SC&#39;26</span>
+            <span class="venue">Poster · SC'26</span>
             <span class="badge soon">To appear</span>
           </div>
-          <div class="pub-links"><!-- once published, add: <a class="pub-link" href="URL" target="_blank" rel="noopener">PDF &#8599;</a> --></div>
+          <div class="pub-links"><!-- once published: <a class="pub-link" href="URL" target="_blank" rel="noopener">PDF &#8599;</a> --></div>
         </div>
       </div>
 
@@ -481,7 +675,7 @@
           <div class="pub-title">Using Hardware Metrics to Understand Performance of RAJA Suite Kernels in Different GPU Modes on MI300A</div>
           <div class="pub-authors"><span class="me">A. A. Abouelmagd</span>, O. Pearce, S. Brink, M. McKinsey, D. Boehme, J. Burmark, B. Ryujin, T. Scogland, A. Skjellum</div>
           <div class="pub-meta">
-            <span class="venue">Poster · SC&#39;25</span>
+            <span class="venue">Poster · SC'25</span>
             <span class="badge first">First author</span>
             <span class="badge award"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="m8.5 13.5-1.5 8 5-3 5 3-1.5-8"/></svg>Top 5 Finalist · GSRC</span>
           </div>
@@ -551,86 +745,7 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="sec-head reveal">
-      <span class="idx">§ 04</span>
-      <h2>Experience</h2>
-      <span class="sub">// research + industry</span>
-    </div>
-    <div class="timeline">
-
-      <div class="job reveal">
-        <div class="job-side">
-          <div class="org">Tennessee Technological University</div>
-          <div class="place">Cookeville, TN</div>
-          <div class="dates">Aug 2026 — Present</div>
-        </div>
-        <div>
-          <div class="job-role">Graduate Research Assistant</div>
-          <ul>
-            <li>PhD research advised by <b>Prof. Anthony Skjellum</b> spanning cross-vendor GPU performance analysis and hardware counters, fault tolerance in HPC systems, KV-caching architecture and performance, and fault-tolerant, strong-progress <b>MPI for AI</b> workloads.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="job reveal">
-        <div class="job-side">
-          <div class="org">Lawrence Livermore National Lab</div>
-          <div class="place">Computation Directorate · Livermore, CA</div>
-          <div class="dates">Jan 2026 — Aug 2026</div>
-        </div>
-        <div>
-          <div class="job-role">Graduate Research Intern</div>
-          <ul>
-            <li>Extended GPU-architecture research on the <b>AMD MI300A</b>, using performance profiling and runtime analysis to characterize application throughput and resource utilization across large-scale parallel workloads.</li>
-            <li>Investigated <b>cross-vendor GPU hardware-counter mapping</b> to compare performance behavior across accelerator architectures, working across the ROCm/HIP profiling stack (Caliper, Thicket, rocprofiler-sdk).</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="job reveal">
-        <div class="job-side">
-          <div class="org">Lawrence Livermore National Lab</div>
-          <div class="place">Computation Directorate · Livermore, CA</div>
-          <div class="dates">May 2025 — Aug 2025</div>
-        </div>
-        <div>
-          <div class="job-role">Graduate Research Intern</div>
-          <ul>
-            <li>Authored a peer-reviewed paper on MI300A <b>partitioning, power, and performance</b> (accepted at SCA/HPC Asia 2026), targeting optimization of <b>LLNL's El Capitan exascale supercomputer</b>.</li>
-            <li>Earned a <b>Top 5 Finalist</b> placement in the SC'25 Graduate Student Research Competition.</li>
-            <li>Conducted systems-level research on the MI300A APU — GPU runtime scheduling, dynamic power sharing, and heterogeneous memory behavior.</li>
-            <li>Designed benchmarking experiments across <b>SPX, TPX, and CPX</b> partitioning modes using RAJA Performance Suite kernels, surfacing up to <b>30% execution-time variance</b>.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="job reveal">
-        <div class="job-side">
-          <div class="org">Incorta</div>
-          <div class="place">Alexandria, Egypt</div>
-          <div class="dates">Aug 2021 — Feb 2024</div>
-        </div>
-        <div>
-          <div class="job-role">Software Engineer II → R&amp;D Software Engineer → Graduate Student Intern</div>
-          <ul>
-            <li>Optimized a distributed analytics platform on <b>Kubernetes + ZooKeeper</b>, improving scalability and query throughput for enterprise workloads.</li>
-            <li>Delivered a <b>2× indexing speedup</b> and <b>7× query-latency reduction</b> on datasets exceeding 1 billion records, improving SLA compliance.</li>
-            <li>Designed an internal <b>caching layer</b> that cut cloud object-storage I/O and infrastructure cost with no hardware changes.</li>
-            <li>Resolved CPU bottlenecks, raising average utilization from <b>40% to 85%</b> and reducing over-provisioning.</li>
-            <li>Improved monitoring and telemetry, reducing incident MTTR across microservices.</li>
-          </ul>
-          <div class="stack">
-            <span class="chip">Java</span><span class="chip">Python</span><span class="chip">Go</span><span class="chip">Kubernetes</span><span class="chip">ZooKeeper</span><span class="chip">MySQL</span><span class="chip">Distributed Systems</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- EDUCATION (compact, folded into experience flow) -->
+  <!-- EDUCATION -->
   <section id="education">
     <div class="sec-head reveal">
       <span class="idx">§ 05</span>
@@ -646,7 +761,7 @@
         </div>
         <div>
           <div class="job-role">Ph.D. in Computer Science</div>
-          <ul><li>Advised by <b>Prof. Anthony Skjellum</b>; research in high-performance computing, GPU systems, and fault-tolerant parallel computing. Expected completion <b>August 2030</b>.</li></ul>
+          <ul><li>Advised by <b>Prof. Anthony Skjellum</b>. Research on HPC and AI systems: fault tolerance, KV-cache architecture and performance, and MPI for AI. Expected completion <b>August 2030</b>.</li></ul>
         </div>
       </div>
       <div class="job reveal">
@@ -668,7 +783,6 @@
         </div>
         <div>
           <div class="job-role">B.S. in Computer Engineering</div>
-          <ul><li>Foundations in computer architecture, systems, and parallel programming.</li></ul>
         </div>
       </div>
     </div>
@@ -685,32 +799,27 @@
 
       <div class="proj reveal">
         <div class="proj-top">
+          <h3>Distributed Key-Value Store</h3>
+        </div>
+        <p>Leader-coordinated store with auto-partitioning and live rebalancing. Fault tolerance via the <b>Bully</b> election algorithm for zero-data-loss failover; multithreaded reads with mutexes and atomics.</p>
+        <div class="stack"><span class="chip">C++</span><span class="chip">Multithreading</span><span class="chip">Distributed</span></div>
+      </div>
+
+      <div class="proj reveal">
+        <div class="proj-top">
           <h3>BusTub Database Engine</h3>
         </div>
         <p>Buffer-pool manager with page-replacement policies, plus a thread-safe <b>LRU-K</b> eviction algorithm that maximizes memory utilization under concurrent workloads.</p>
         <div class="stack"><span class="chip">C++</span><span class="chip">Makefile</span><span class="chip">CMU</span></div>
-        <div class="proj-note">Course project — solution repository kept private per CMU policy.</div>
       </div>
 
-      <!-- Verify this repo URL is correct, public, and pinned -->
-      <a class="proj reveal" href="https://github.com/amroakmal/cuda-parallel-softmax" target="_blank" rel="noopener">
+      <div class="proj reveal">
         <div class="proj-top">
           <h3>CUDA Parallel Softmax</h3>
-          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
         </div>
         <p>Optimized softmax kernel using shared memory and block-level reduction to cut global-memory latency; throughput scaled via memory coalescing and parallel row-wise processing.</p>
         <div class="stack"><span class="chip">C++</span><span class="chip">CUDA</span><span class="chip">GPU</span></div>
-      </a>
-
-      <!-- Verify this repo URL is correct, public, and pinned -->
-      <a class="proj reveal" href="https://github.com/amroakmal/distributed-kv-store" target="_blank" rel="noopener">
-        <div class="proj-top">
-          <h3>Distributed Key-Value Store</h3>
-          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
-        </div>
-        <p>Leader-coordinated store with auto-partitioning and live rebalancing. Fault tolerance via the <b>Bully</b> election algorithm for zero-data-loss failover; multithreaded reads with mutexes and atomics.</p>
-        <div class="stack"><span class="chip">C++</span><span class="chip">Multithreading</span><span class="chip">Distributed</span></div>
-      </a>
+      </div>
 
     </div>
   </section>
@@ -727,20 +836,24 @@
         <div class="tags"><span>C / C++</span><span>Python</span><span>Java</span><span>Go</span></div>
       </div>
       <div class="skillgroup">
-        <h3>Parallel &amp; HPC</h3>
-        <div class="tags"><span>MPI</span><span>CUDA</span><span>Kokkos</span><span>RAJA Perf Suite</span></div>
+        <h3>Parallel &amp; GPU programming</h3>
+        <div class="tags"><span>MPI</span><span>CUDA</span><span>HIP</span><span>ROCm</span><span>Kokkos</span></div>
       </div>
       <div class="skillgroup">
-        <h3>Systems &amp; Infra</h3>
+        <h3>Performance analysis</h3>
+        <div class="tags"><span>Caliper</span><span>Thicket</span><span>Nsight Compute</span><span>rocprofiler-sdk</span><span>Hardware counters</span></div>
+      </div>
+      <div class="skillgroup">
+        <h3>Benchmarking &amp; reproducibility</h3>
+        <div class="tags"><span>RAJA Performance Suite</span><span>Benchpark</span><span>Spack</span><span>CMake</span></div>
+      </div>
+      <div class="skillgroup">
+        <h3>Distributed systems &amp; infra</h3>
         <div class="tags"><span>Kubernetes</span><span>Docker</span><span>ZooKeeper</span><span>MySQL</span></div>
       </div>
       <div class="skillgroup">
-        <h3>Profiling &amp; HPC tooling</h3>
-        <div class="tags"><span>HIP</span><span>ROCm</span><span>Caliper</span><span>Thicket</span><span>Nsight Compute</span><span>rocprofiler-sdk</span><span>Benchpark</span><span>Spack</span></div>
-      </div>
-      <div class="skillgroup">
         <h3>Developer tools</h3>
-        <div class="tags"><span>Linux</span><span>Git</span><span>CMake</span><span>Makefile</span></div>
+        <div class="tags"><span>Linux</span><span>Git</span><span>Makefile</span></div>
       </div>
     </div>
   </section>
@@ -770,7 +883,22 @@
       <div class="award-row">
         <div class="award-ico blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></div>
         <div class="award-name">Cloud DevOps Nanodegree<span>Udacity</span></div>
-        <div class="award-year">—</div>
+        <div class="award-year"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="sec-head reveal">
+      <span class="idx">§ 09</span>
+      <h2>Get in touch</h2>
+    </div>
+    <div class="contact reveal">
+      <p class="contact-lede">I'm open to <b>Summer 2027 internships</b> in HPC and AI systems, and always happy to talk about research and collaborations. Email is the fastest way to reach me.</p>
+      <div class="contact-row">
+        <a class="contact-email" href="mailto:aabouelma42@tntech.edu">aabouelma42@tntech.edu</a>
+        <button class="copy-btn" id="copyEmail" type="button" data-email="aabouelma42@tntech.edu" aria-label="Copy email address">Copy</button>
       </div>
     </div>
   </section>
@@ -780,15 +908,14 @@
 <footer>
   <div class="wrap foot">
     <div class="meta">
-      <b>Amr Akmal Abouelmagd</b> — HPC &amp; GPU systems research<br />
+      <b>Amr Akmal Abouelmagd</b> — HPC &amp; AI systems research<br />
       Built &amp; maintained by Amr · <span id="year"></span>
     </div>
     <div class="foot-links">
       <a href="mailto:aabouelma42@tntech.edu" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
       <a href="https://github.com/amroakmal" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
-      <a href="https://linkedin.com/in/amroakmal" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5A1.94 1.94 0 1 1 3.06 5a1.94 1.94 0 0 1 3.88 0ZM3.4 8.5h3.06V21H3.4V8.5Zm5.1 0h2.93v1.71h.04c.41-.77 1.4-1.58 2.89-1.58 3.09 0 3.66 2.03 3.66 4.68V21h-3.06v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21H8.5V8.5Z"/></svg></a>
-      <!-- Replace with your real Google Scholar profile -->
-      <a href="https://scholar.google.com/citations?user=FJQIUp4AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8.5 12 14l10-5.5L12 3Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></svg></a>
+      <a href="https://www.linkedin.com/in/amroakmal/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5A1.94 1.94 0 1 1 3.06 5a1.94 1.94 0 0 1 3.88 0ZM3.4 8.5h3.06V21H3.4V8.5Zm5.1 0h2.93v1.71h.04c.41-.77 1.4-1.58 2.89-1.58 3.09 0 3.66 2.03 3.66 4.68V21h-3.06v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21H8.5V8.5Z"/></svg></a>
+      <a href="https://scholar.google.com/citations?user=FJQIUp4AAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8.5 12 14l10-5.5L12 3Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></svg></a>
     </div>
   </div>
 </footer>
@@ -838,6 +965,37 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
     reveals.forEach(function (el) { io.observe(el); });
+  }
+
+  // ---- Copy email (falls back to selecting the address) ----
+  var copyBtn = document.getElementById('copyEmail');
+  if (copyBtn) {
+    var copyLabel = copyBtn.textContent;
+    var flash = function (msg) {
+      copyBtn.textContent = msg;
+      setTimeout(function () { copyBtn.textContent = copyLabel; }, 1800);
+    };
+    var selectEmail = function () {
+      var el = document.querySelector('.contact-email');
+      if (!el || !window.getSelection) return;
+      var range = document.createRange();
+      range.selectNodeContents(el);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+    };
+    copyBtn.addEventListener('click', function () {
+      var email = copyBtn.getAttribute('data-email');
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(email).then(
+          function () { flash('Copied ✓'); },
+          function () { selectEmail(); flash('Selected'); }
+        );
+      } else {
+        selectEmail();
+        flash('Selected');
+      }
+    });
   }
 })();
 </script>
