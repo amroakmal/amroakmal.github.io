@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Amr Akmal Abouelmagd</title>
-<meta name="description" content="Amr Akmal Abouelmagd — HPC & GPU systems researcher. GPU architecture &amp; power on the AMD MI300A behind El Capitan, fault tolerance in HPC, KV-caching performance, and MPI for AI. LLNL intern; incoming PhD at Tennessee Tech." />
+<title>Amr Akmal Abouelmagd — HPC & GPU Systems Researcher</title>
+<meta name="description" content="Amr Akmal Abouelmagd — HPC & GPU systems researcher and PhD student at Tennessee Tech (advised by Prof. Anthony Skjellum). GPU architecture, partitioning &amp; power and cross-vendor hardware-counter mapping on the AMD MI300A behind LLNL&#39;s El Capitan; fault tolerance in HPC, KV-caching performance, and MPI for AI. Former LLNL research intern." />
 <meta name="author" content="Amr Akmal Abouelmagd" />
 
 <!-- Open Graph / social preview -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Amr Akmal Abouelmagd — HPC & GPU Systems Researcher" />
-<meta property="og:description" content="HPC & GPU systems researcher — GPU architecture & power, fault tolerance in HPC, KV-caching, and MPI for AI. LLNL intern; incoming PhD at Tennessee Tech with Prof. Anthony Skjellum." />
-<meta property="og:url" content="https://amroakmal.github.io/portfolio/" />
+<meta property="og:description" content="HPC & GPU systems researcher and PhD student at Tennessee Tech (advised by Prof. Anthony Skjellum) — GPU architecture & power, cross-vendor GPU hardware counters, fault tolerance in HPC, KV-caching, and MPI for AI. Former LLNL research intern." />
+<meta property="og:url" content="https://amroakmal.github.io/" />
 <meta name="twitter:card" content="summary" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -199,6 +199,11 @@
   .badge { font-family: "IBM Plex Mono", monospace; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 7px; display: inline-flex; align-items: center; gap: 5px; letter-spacing: .02em; }
   .badge.award { background: var(--amber-wash); color: var(--amber); }
   .badge.first { border: 1px solid var(--line-strong); color: var(--ink-soft); }
+  .badge.soon { background: var(--bg-tint); color: var(--ink-faint); border: 1px dashed var(--line-strong); }
+  .pub-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 11px; }
+  .pub-link { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; font-weight: 500; padding: 4px 10px; border-radius: 7px; border: 1px solid var(--line-strong); color: var(--ink-soft); display: inline-flex; align-items: center; gap: 5px; transition: color .18s, border-color .18s; }
+  .pub-link:hover { color: var(--accent); border-color: var(--accent); }
+  .pub-todo { color: var(--ink-faint); font-style: italic; }
   .badge svg { width: 12px; height: 12px; }
 
   /* Experience timeline */
@@ -225,6 +230,12 @@
   .proj:hover { border-color: var(--line-strong); box-shadow: var(--shadow); }
   .proj-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
   .proj h3 { font-size: 17px; letter-spacing: -0.015em; line-height: 1.25; }
+  a.proj { cursor: pointer; }
+  a.proj:hover { transform: translateY(-3px); box-shadow: var(--shadow-lift); }
+  .proj .arrow { color: var(--ink-faint); flex: none; transition: color .2s, transform .2s; }
+  a.proj:hover .arrow { color: var(--accent); transform: translate(2px,-2px); }
+  .proj .arrow svg { width: 17px; height: 17px; display: block; }
+  .proj-note { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-faint); margin-top: 12px; }
   .proj p { margin: 0 0 14px; font-size: 14px; color: var(--ink-soft); line-height: 1.55; flex: 1; }
   .proj .stack { margin-top: auto; }
 
@@ -316,22 +327,25 @@
   <!-- HERO -->
   <section class="hero no-rule" id="hero">
     <div class="hero-eyebrow reveal">
-      <span class="eyebrow"><span class="status-dot"></span>&nbsp;&nbsp;INCOMING PHD · TENNESSEE TECH · FALL 2026</span>
+      <span class="eyebrow"><span class="status-dot"></span>&nbsp;&nbsp;PHD STUDENT · TENNESSEE TECH</span>
       <span class="eyebrow">·</span>
       <span class="eyebrow">BAY AREA, CA</span>
     </div>
     <h1 class="name reveal">Amr Akmal Abouelmagd</h1>
     <div class="role reveal">
-      M.S. Computer Science <span class="sep">/</span> HPC &amp; GPU Systems Researcher <span class="sep">/</span> Software Engineer
+      PhD Student, Computer Science <span class="sep">/</span> HPC &amp; GPU Systems Researcher <span class="sep">/</span> Software Engineer
     </div>
     <p class="lede reveal">
-      My research runs from <strong>GPU architecture, partitioning, and
-      power</strong> on the AMD MI300A APU behind <strong>El Capitan</strong> — the world's
-      fastest supercomputer — to <strong>fault tolerance in HPC</strong>,
-      <strong>KV-caching architecture and performance</strong>, and reshaping
-      <strong>MPI for the AI era</strong> so it stays fault-tolerant and keeps making strong
-      progress under failure. This fall I begin my PhD journey
-      with Prof. Anthony Skjellum.
+      I chase one question: how do large-scale systems <em>actually</em> behave when you push
+      them to the edge? My research runs from <strong>GPU architecture, partitioning, and
+      power</strong> and <strong>cross-vendor GPU hardware-counter mapping</strong> on the AMD
+      MI300A APU behind <strong>LLNL's El Capitan exascale supercomputer</strong>, to
+      <strong>fault tolerance in HPC</strong>, <strong>KV-caching architecture and
+      performance</strong>, and reshaping <strong>MPI for the AI era</strong> so it stays
+      fault-tolerant and keeps making strong progress under failure. I'm a <strong>PhD student
+      and Graduate Research Assistant at Tennessee Tech</strong>, advised by Prof. Anthony
+      Skjellum, following a research internship at <strong>Lawrence Livermore National
+      Laboratory</strong>.
     </p>
     <div class="links reveal">
       <a class="link-pill" href="mailto:aabouelma42@tntech.edu">
@@ -351,6 +365,11 @@
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5A1.94 1.94 0 1 1 3.06 5a1.94 1.94 0 0 1 3.88 0ZM3.4 8.5h3.06V21H3.4V8.5Zm5.1 0h2.93v1.71h.04c.41-.77 1.4-1.58 2.89-1.58 3.09 0 3.66 2.03 3.66 4.68V21h-3.06v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21H8.5V8.5Z"/></svg>
         LinkedIn
       </a>
+      <!-- Upload your CV to the repo root as resume.pdf for this to work -->
+      <a class="link-pill" href="./resume.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2Z"/></svg>
+        Résumé (PDF)
+      </a>
     </div>
   </section>
 
@@ -363,8 +382,16 @@
     </div>
     <div class="news reveal">
       <div class="news-row">
-        <div class="news-date">Jan 2026</div>
-        <div class="news-text">Started a continued research internship at <b>LLNL's Computation Directorate</b>, extending GPU-architecture work on the AMD MI300A.</div>
+        <div class="news-date">Sep 2026</div>
+        <div class="news-text">First-author paper accepted at the <b>ProTools workshop, SC'26</b> <span class="hl">(to appear)</span>.</div>
+      </div>
+      <div class="news-row">
+        <div class="news-date">Sep 2026</div>
+        <div class="news-text"><b>OpenCCL</b> poster accepted at <b>SC'26</b> <span class="hl">(to appear)</span>.</div>
+      </div>
+      <div class="news-row">
+        <div class="news-date">Aug 2026</div>
+        <div class="news-text">Completed my <b>M.S.</b> at Tennessee Tech and finished my research internship at <b>LLNL</b>; began my <b>PhD</b> and <b>Graduate Research Assistant</b> position with Prof. Anthony Skjellum.</div>
       </div>
       <div class="news-row">
         <div class="news-date">Dec 2025</div>
@@ -373,10 +400,6 @@
       <div class="news-row">
         <div class="news-date">Nov 2025</div>
         <div class="news-text"><span class="hl">Top 5 Finalist</span> in the <b>SC'25 Graduate Student Research Competition</b> for MI300A APU performance analysis.</div>
-      </div>
-      <div class="news-row">
-        <div class="news-date">Aug 2025</div>
-        <div class="news-text">Wrapped up a summer research internship at LLNL benchmarking RAJA-Suite kernels across MI300A partitioning modes.</div>
       </div>
       <div class="news-row">
         <div class="news-date">2024</div>
@@ -394,11 +417,12 @@
     </div>
     <div class="interests reveal">
       <div class="interest"><span class="n">01</span><span class="t">GPU Architecture, Partitioning &amp; Power</span></div>
-      <div class="interest"><span class="n">02</span><span class="t">Fault Tolerance in HPC Systems</span></div>
-      <div class="interest"><span class="n">03</span><span class="t">KV-Caching Architecture &amp; Performance</span></div>
-      <div class="interest"><span class="n">04</span><span class="t">MPI for AI — Fault-Tolerant, Strong Progress</span></div>
-      <div class="interest"><span class="n">05</span><span class="t">Distributed Systems &amp; Parallel Computing</span></div>
-      <div class="interest"><span class="n">06</span><span class="t">Systems Performance Analysis</span></div>
+      <div class="interest"><span class="n">02</span><span class="t">Cross-Vendor GPU Performance Analysis &amp; Hardware Counters</span></div>
+      <div class="interest"><span class="n">03</span><span class="t">Fault Tolerance in HPC Systems</span></div>
+      <div class="interest"><span class="n">04</span><span class="t">KV-Caching Architecture &amp; Performance</span></div>
+      <div class="interest"><span class="n">05</span><span class="t">MPI for AI — Fault-Tolerant, Strong Progress</span></div>
+      <div class="interest"><span class="n">06</span><span class="t">Distributed Systems &amp; Parallel Computing</span></div>
+      <div class="interest"><span class="n">07</span><span class="t">Systems Performance Analysis</span></div>
     </div>
   </section>
 
@@ -407,12 +431,39 @@
     <div class="sec-head reveal">
       <span class="idx">§ 03</span>
       <h2>Publications</h2>
-      <span class="sub">// 7 papers · 4 first-author</span>
+      <span class="sub">// 9 papers · 5 first-author</span>
     </div>
     <div class="pubs">
 
       <div class="pub reveal">
         <div class="pub-num">01</div>
+        <div>
+          <div class="pub-title">[ProTools @ SC&#39;26 — add exact paper title]</div>
+          <div class="pub-authors"><span class="me">A. A. Abouelmagd</span>, et al. &nbsp;<span class="pub-todo">— confirm full author list</span></div>
+          <div class="pub-meta">
+            <span class="venue">ProTools · SC&#39;26</span>
+            <span class="badge first">First author</span>
+            <span class="badge soon">To appear</span>
+          </div>
+          <div class="pub-links"><!-- once published, add: <a class="pub-link" href="DOI_OR_PDF_URL" target="_blank" rel="noopener">DOI &#8599;</a>  (check ProTools/publisher author-posting policy before uploading a PDF) --></div>
+        </div>
+      </div>
+
+      <div class="pub reveal">
+        <div class="pub-num">02</div>
+        <div>
+          <div class="pub-title">OpenCCL — [add exact poster title]</div>
+          <div class="pub-authors"><span class="pub-todo">add author list (incl. </span><span class="me">A. A. Abouelmagd</span><span class="pub-todo">)</span></div>
+          <div class="pub-meta">
+            <span class="venue">Poster · SC&#39;26</span>
+            <span class="badge soon">To appear</span>
+          </div>
+          <div class="pub-links"><!-- once published, add: <a class="pub-link" href="URL" target="_blank" rel="noopener">PDF &#8599;</a> --></div>
+        </div>
+      </div>
+
+      <div class="pub reveal">
+        <div class="pub-num">03</div>
         <div>
           <div class="pub-title">GPU Partitioning, Power, and Performance of the AMD MI300A</div>
           <div class="pub-authors"><span class="me">A. Abouelmagd</span>, D. Boehme, S. Brink, J. Burmark, M. McKinsey, A. Skjellum, O. Pearce</div>
@@ -420,42 +471,46 @@
             <span class="venue">SCA / HPC Asia 2026</span>
             <span class="badge first">First author</span>
           </div>
-        </div>
-      </div>
-
-      <div class="pub reveal">
-        <div class="pub-num">02</div>
-        <div>
-          <div class="pub-title">Using Hardware Metrics to Understand Performance of RAJA Suite Kernels in Different GPU Modes on MI300A</div>
-          <div class="pub-authors"><span class="me">A. A. Abouelmagd</span>, O. Pearce, S. Brink, M. McKinsey, D. Boehme, J. Burmark, B. Ryujin, T. Scogland, A. Skjellum</div>
-          <div class="pub-meta">
-            <span class="venue">Poster · SC'25</span>
-            <span class="badge first">First author</span>
-            <span class="badge award"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="m8.5 13.5-1.5 8 5-3 5 3-1.5-8"/></svg>Top 5 Finalist · GSRC</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="pub reveal">
-        <div class="pub-num">03</div>
-        <div>
-          <div class="pub-title">Load Imbalance in HPC Applications: Improved Profiling and New Ways to Use Wasted Cycles</div>
-          <div class="pub-authors">S. Yang, X. Yao, G. Nansamba, <span class="me">A. A. Abouelmagd</span>, A. Skjellum, M. Herbordt</div>
-          <div class="pub-meta"><span class="venue">IEEE HPEC 2025</span></div>
+          <div class="pub-links"><!-- add: <a class="pub-link" href="DOI_URL" target="_blank" rel="noopener">DOI &#8599;</a> --></div>
         </div>
       </div>
 
       <div class="pub reveal">
         <div class="pub-num">04</div>
         <div>
-          <div class="pub-title">A Survey of Optimization Approaches for MPI Alltoall and MPI Alltoallv</div>
-          <div class="pub-authors">E. Namugwanya, G. Nansamba, <span class="me">A. A. Abouelmagd</span>, A. Skjellum</div>
-          <div class="pub-meta"><span class="venue">SAI Computing Conference 2025</span></div>
+          <div class="pub-title">Using Hardware Metrics to Understand Performance of RAJA Suite Kernels in Different GPU Modes on MI300A</div>
+          <div class="pub-authors"><span class="me">A. A. Abouelmagd</span>, O. Pearce, S. Brink, M. McKinsey, D. Boehme, J. Burmark, B. Ryujin, T. Scogland, A. Skjellum</div>
+          <div class="pub-meta">
+            <span class="venue">Poster · SC&#39;25</span>
+            <span class="badge first">First author</span>
+            <span class="badge award"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="m8.5 13.5-1.5 8 5-3 5 3-1.5-8"/></svg>Top 5 Finalist · GSRC</span>
+          </div>
+          <div class="pub-links"><!-- add: <a class="pub-link" href="URL" target="_blank" rel="noopener">PDF &#8599;</a> --></div>
         </div>
       </div>
 
       <div class="pub reveal">
         <div class="pub-num">05</div>
+        <div>
+          <div class="pub-title">Load Imbalance in HPC Applications: Improved Profiling and New Ways to Use Wasted Cycles</div>
+          <div class="pub-authors">S. Yang, X. Yao, G. Nansamba, <span class="me">A. A. Abouelmagd</span>, A. Skjellum, M. Herbordt</div>
+          <div class="pub-meta"><span class="venue">IEEE HPEC 2025</span></div>
+          <div class="pub-links"><!-- add: <a class="pub-link" href="DOI_URL" target="_blank" rel="noopener">DOI &#8599;</a> --></div>
+        </div>
+      </div>
+
+      <div class="pub reveal">
+        <div class="pub-num">06</div>
+        <div>
+          <div class="pub-title">A Survey of Optimization Approaches for MPI Alltoall and MPI Alltoallv</div>
+          <div class="pub-authors">E. Namugwanya, G. Nansamba, <span class="me">A. A. Abouelmagd</span>, A. Skjellum</div>
+          <div class="pub-meta"><span class="venue">SAI Computing Conference 2025</span></div>
+          <div class="pub-links"><!-- add: <a class="pub-link" href="DOI_URL" target="_blank" rel="noopener">DOI &#8599;</a> --></div>
+        </div>
+      </div>
+
+      <div class="pub reveal">
+        <div class="pub-num">07</div>
         <div>
           <div class="pub-title">Leveraging the Power of AI and Social Interactions to Restore Trust in Public Polls</div>
           <div class="pub-authors"><span class="me">A. A. Abouelmagd</span>, A. Hilal</div>
@@ -463,11 +518,12 @@
             <span class="venue">CSCI 2025</span>
             <span class="badge first">First author</span>
           </div>
+          <div class="pub-links"><!-- add: <a class="pub-link" href="DOI_URL" target="_blank" rel="noopener">DOI &#8599;</a> --></div>
         </div>
       </div>
 
       <div class="pub reveal">
-        <div class="pub-num">06</div>
+        <div class="pub-num">08</div>
         <div>
           <div class="pub-title">Emerging Paradigms for Securing Federated Learning Systems</div>
           <div class="pub-authors"><span class="me">A. A. Abouelmagd</span>, A. Hilal</div>
@@ -475,11 +531,12 @@
             <span class="venue">IEEE GCAIoT 2025</span>
             <span class="badge first">First author</span>
           </div>
+          <div class="pub-links"><!-- add: <a class="pub-link" href="DOI_URL" target="_blank" rel="noopener">DOI &#8599;</a> --></div>
         </div>
       </div>
 
       <div class="pub reveal">
-        <div class="pub-num">07</div>
+        <div class="pub-num">09</div>
         <div>
           <div class="pub-title">Cycle-Stealing in Load-Imbalanced HPC Applications</div>
           <div class="pub-authors">P. H. Chen, A. Bali, S. Yang, P. Haghi, C. Knox, B. Li, <span class="me">A. A. Abouelmagd</span>, A. Skjellum, M. Herbordt</div>
@@ -487,6 +544,7 @@
             <span class="venue">IEEE HPEC 2024</span>
             <span class="badge award"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="m8.5 13.5-1.5 8 5-3 5 3-1.5-8"/></svg>Outstanding Student Paper</span>
           </div>
+          <div class="pub-links"><!-- add: <a class="pub-link" href="DOI_URL" target="_blank" rel="noopener">DOI &#8599;</a> --></div>
         </div>
       </div>
 
@@ -504,14 +562,29 @@
 
       <div class="job reveal">
         <div class="job-side">
+          <div class="org">Tennessee Technological University</div>
+          <div class="place">Cookeville, TN</div>
+          <div class="dates">Aug 2026 — Present</div>
+        </div>
+        <div>
+          <div class="job-role">Graduate Research Assistant</div>
+          <ul>
+            <li>PhD research advised by <b>Prof. Anthony Skjellum</b> spanning cross-vendor GPU performance analysis and hardware counters, fault tolerance in HPC systems, KV-caching architecture and performance, and fault-tolerant, strong-progress <b>MPI for AI</b> workloads.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-side">
           <div class="org">Lawrence Livermore National Lab</div>
           <div class="place">Computation Directorate · Livermore, CA</div>
           <div class="dates">Jan 2026 — Aug 2026</div>
         </div>
         <div>
-          <div class="job-role">Research Intern</div>
+          <div class="job-role">Graduate Research Intern</div>
           <ul>
-            <li>Continuing GPU-architecture research on the <b>AMD MI300A</b>, applying performance profiling and runtime analysis to optimize HPC application throughput and resource utilization across large-scale parallel workloads.</li>
+            <li>Extended GPU-architecture research on the <b>AMD MI300A</b>, using performance profiling and runtime analysis to characterize application throughput and resource utilization across large-scale parallel workloads.</li>
+            <li>Investigated <b>cross-vendor GPU hardware-counter mapping</b> to compare performance behavior across accelerator architectures, working across the ROCm/HIP profiling stack (Caliper, Thicket, rocprofiler-sdk).</li>
           </ul>
         </div>
       </div>
@@ -523,9 +596,9 @@
           <div class="dates">May 2025 — Aug 2025</div>
         </div>
         <div>
-          <div class="job-role">Research Intern</div>
+          <div class="job-role">Graduate Research Intern</div>
           <ul>
-            <li>Authored a peer-reviewed paper on MI300A <b>partitioning, power, and performance</b> (accepted at SCA/HPC Asia 2026), targeting optimization of <b>El Capitan</b>, the world's fastest supercomputer.</li>
+            <li>Authored a peer-reviewed paper on MI300A <b>partitioning, power, and performance</b> (accepted at SCA/HPC Asia 2026), targeting optimization of <b>LLNL's El Capitan exascale supercomputer</b>.</li>
             <li>Earned a <b>Top 5 Finalist</b> placement in the SC'25 Graduate Student Research Competition.</li>
             <li>Conducted systems-level research on the MI300A APU — GPU runtime scheduling, dynamic power sharing, and heterogeneous memory behavior.</li>
             <li>Designed benchmarking experiments across <b>SPX, TPX, and CPX</b> partitioning modes using RAJA Performance Suite kernels, surfacing up to <b>30% execution-time variance</b>.</li>
@@ -540,7 +613,7 @@
           <div class="dates">Aug 2021 — Feb 2024</div>
         </div>
         <div>
-          <div class="job-role">Software Engineer II → R&amp;D Engineer → Graduate Intern</div>
+          <div class="job-role">Software Engineer II → R&amp;D Software Engineer → Graduate Student Intern</div>
           <ul>
             <li>Optimized a distributed analytics platform on <b>Kubernetes + ZooKeeper</b>, improving scalability and query throughput for enterprise workloads.</li>
             <li>Delivered a <b>2× indexing speedup</b> and <b>7× query-latency reduction</b> on datasets exceeding 1 billion records, improving SLA compliance.</li>
@@ -562,29 +635,29 @@
     <div class="sec-head reveal">
       <span class="idx">§ 05</span>
       <h2>Education</h2>
-      <span class="sub">// incoming PhD</span>
+      <span class="sub">// PhD in progress</span>
     </div>
     <div class="timeline">
       <div class="job reveal">
         <div class="job-side">
           <div class="org">Tennessee Technological University</div>
           <div class="place">Cookeville, TN</div>
-          <div class="dates">Fall 2026 — Incoming</div>
+          <div class="dates">Aug 2026 — Present</div>
         </div>
         <div>
           <div class="job-role">Ph.D. in Computer Science</div>
-          <ul><li>Incoming doctoral researcher advised by <b>Prof. Anthony Skjellum</b>, focusing on high-performance computing and GPU systems.</li></ul>
+          <ul><li>Advised by <b>Prof. Anthony Skjellum</b>; research in high-performance computing, GPU systems, and fault-tolerant parallel computing. Expected completion <b>August 2030</b>.</li></ul>
         </div>
       </div>
       <div class="job reveal">
         <div class="job-side">
           <div class="org">Tennessee Technological University</div>
           <div class="place">Cookeville, TN</div>
-          <div class="dates">Jan 2024 — Summer 2026</div>
+          <div class="dates">Jan 2024 — Aug 2026</div>
         </div>
         <div>
           <div class="job-role">M.S. in Computer Science</div>
-          <ul><li>GPA <b>4.0 / 4.0</b>. Research in high-performance computing, GPU performance analysis, and distributed systems.</li></ul>
+          <ul><li>GPA <b>4.0 / 4.0</b>, completed <b>August 2026</b>. Research in high-performance computing, GPU performance analysis, and distributed systems.</li></ul>
         </div>
       </div>
       <div class="job reveal">
@@ -616,23 +689,28 @@
         </div>
         <p>Buffer-pool manager with page-replacement policies, plus a thread-safe <b>LRU-K</b> eviction algorithm that maximizes memory utilization under concurrent workloads.</p>
         <div class="stack"><span class="chip">C++</span><span class="chip">Makefile</span><span class="chip">CMU</span></div>
+        <div class="proj-note">Course project — solution repository kept private per CMU policy.</div>
       </div>
 
-      <div class="proj reveal">
+      <!-- Verify this repo URL is correct, public, and pinned -->
+      <a class="proj reveal" href="https://github.com/amroakmal/cuda-parallel-softmax" target="_blank" rel="noopener">
         <div class="proj-top">
           <h3>CUDA Parallel Softmax</h3>
+          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
         </div>
         <p>Optimized softmax kernel using shared memory and block-level reduction to cut global-memory latency; throughput scaled via memory coalescing and parallel row-wise processing.</p>
         <div class="stack"><span class="chip">C++</span><span class="chip">CUDA</span><span class="chip">GPU</span></div>
-      </div>
+      </a>
 
-      <div class="proj reveal">
+      <!-- Verify this repo URL is correct, public, and pinned -->
+      <a class="proj reveal" href="https://github.com/amroakmal/distributed-kv-store" target="_blank" rel="noopener">
         <div class="proj-top">
           <h3>Distributed Key-Value Store</h3>
+          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
         </div>
         <p>Leader-coordinated store with auto-partitioning and live rebalancing. Fault tolerance via the <b>Bully</b> election algorithm for zero-data-loss failover; multithreaded reads with mutexes and atomics.</p>
         <div class="stack"><span class="chip">C++</span><span class="chip">Multithreading</span><span class="chip">Distributed</span></div>
-      </div>
+      </a>
 
     </div>
   </section>
@@ -655,6 +733,10 @@
       <div class="skillgroup">
         <h3>Systems &amp; Infra</h3>
         <div class="tags"><span>Kubernetes</span><span>Docker</span><span>ZooKeeper</span><span>MySQL</span></div>
+      </div>
+      <div class="skillgroup">
+        <h3>Profiling &amp; HPC tooling</h3>
+        <div class="tags"><span>HIP</span><span>ROCm</span><span>Caliper</span><span>Thicket</span><span>Nsight Compute</span><span>rocprofiler-sdk</span><span>Benchpark</span><span>Spack</span></div>
       </div>
       <div class="skillgroup">
         <h3>Developer tools</h3>
